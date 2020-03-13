@@ -1,0 +1,11 @@
+C:\WebPay\Payment.Domain\obj\Debug\netstandard2.1\Payment.Domain.csprojAssemblyReference.cache
+C:\WebPay\Payment.Domain\obj\Debug\netstandard2.1\Payment.Domain.AssemblyInfoInputs.cache
+C:\WebPay\Payment.Domain\obj\Debug\netstandard2.1\Payment.Domain.AssemblyInfo.cs
+C:\WebPay\Payment.Domain\bin\Debug\netstandard2.1\Payment.Domain.deps.json
+C:\WebPay\Payment.Domain\bin\Debug\netstandard2.1\Payment.Domain.dll
+C:\WebPay\Payment.Domain\bin\Debug\netstandard2.1\Payment.Domain.pdb
+C:\WebPay\Payment.Domain\bin\Debug\netstandard2.1\Payment.Dto.dll
+C:\WebPay\Payment.Domain\bin\Debug\netstandard2.1\Payment.Dto.pdb
+C:\WebPay\Payment.Domain\obj\Debug\netstandard2.1\Payment.Domain.csproj.CopyComplete
+C:\WebPay\Payment.Domain\obj\Debug\netstandard2.1\Payment.Domain.dll
+C:\WebPay\Payment.Domain\obj\Debug\netstandard2.1\Payment.Domain.pdb
