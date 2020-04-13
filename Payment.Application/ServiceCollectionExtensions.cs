@@ -12,6 +12,8 @@ namespace Payment.Application
         {
             services.AddTransient<IEstabelecimentoAppService, EstabelecimentoAppService>();
             
+            //services.AddTransient<IEstabelecimentoFirebaseAppService, EstabelecimentoFirebaseAppservice>();
+
             return services;
         }
 

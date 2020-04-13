@@ -9,6 +9,7 @@ namespace Payment.Application.Interface
     public interface IEstabelecimentoAppService 
     {
         public bool Adicionar(Payment.Dto.Estabelecimento  estabelecimentoDto );
+        public bool AdicionarFireBase(Payment.Dto.Estabelecimento estabelecimentoDto);
 
         public bool Editar(Payment.Dto.Estabelecimento estabelecimentoDto);
         public bool Manter(Payment.Dto.Estabelecimento estabelecimentoDto);

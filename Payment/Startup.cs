@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
+using Payment.Infra.FireBase;
 
 namespace Payment
 {
@@ -36,6 +37,8 @@ namespace Payment
         {
             services.AddCors();
             services.AddControllers();
+
+
 
             var key = Encoding.ASCII.GetBytes(Jwttoken.Secret);
 
@@ -65,8 +68,10 @@ namespace Payment
             services.AddDbContext<PaymentDataContext>(
                  options => options.UseSqlServer("Data Source=.\\SQLEXPRESS;Initial Catalog=BDPayment;Integrated Security=True")
                  );
-            
-    
+
+
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1",
@@ -99,8 +104,9 @@ namespace Payment
                             
 
             services.AddDomain();
+            services.AddInfra();
             services.AddApplication();
-
+            
         
         } 
 
@@ -125,8 +131,6 @@ namespace Payment
             app.UseSwaggerUI(c=> {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Payment V1"); 
                            });
-
-            
 
             app.UseRouting();
 

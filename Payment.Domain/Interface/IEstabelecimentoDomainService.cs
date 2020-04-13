@@ -8,6 +8,8 @@ namespace Payment.Domain.Interface
     public interface IEstabelecimentoDomainService
     {
         public bool Adicionar(Dto.Estabelecimento estabelecimento);
+        public bool AdicionarFirebase(Dto.Estabelecimento estabelecimento);
+
         public bool Editar(Dto.Estabelecimento estabelecimento);
         public bool Manter(Dto.Estabelecimento estabelecimento);
         public bool Apagar(Dto.Estabelecimento estabelecimento);

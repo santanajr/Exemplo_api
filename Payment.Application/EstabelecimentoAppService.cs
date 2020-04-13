@@ -51,5 +51,11 @@ namespace Payment.Application
         {
             return _EstabelecimetnoService.Manter(estabelecimentoDto);
         }
+
+        public bool AdicionarFireBase(Estabelecimento estabelecimentoDto)
+        {
+            _EstabelecimetnoService.AdicionarFirebase(estabelecimentoDto);
+            return true;
+        }
     }
 }

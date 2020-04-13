@@ -17,6 +17,9 @@ namespace Payment.Domain
 
             services.AddTransient<IEstabelecimentoDomainService , EstabelecimentoDomainService  >();
 
+            //services.AddTransient<IEstabelecimentoFBDomainService, EstabelecimentoFBDomainService>();
+
+
             return services;
         
         }

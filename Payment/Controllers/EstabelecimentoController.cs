@@ -28,7 +28,16 @@ namespace Payment.web.Controllers
             else
                 return BadRequest();
         }
-        
+
+        [HttpPost("AdicionarFirebase")]
+        public IActionResult AdicionarFirebase([FromBody] Dto.Estabelecimento EstabDto)
+        {
+            if (EstabelecimentoAppService.AdicionarFireBase(EstabDto))
+                return Ok(EstabDto);
+            else
+                return BadRequest();
+        }
+
         [HttpPut]
         public IActionResult Editar([FromBody] Payment.Dto.Estabelecimento EstabDto)
         {
